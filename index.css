@@ -111,8 +111,9 @@ h3 {
 
 .hero {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 13px;
     margin: 20px;
 }
@@ -170,8 +171,8 @@ nav {
 }
 
 .profile {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 1px solid black;
     margin-right: 15px;
@@ -203,6 +204,7 @@ nav {
     padding-left: 1em; 
     padding-top: 8px;
     text-indent: -.7em;
+    cursor: pointer;
 }
 
 .skills-list li::before {
@@ -236,4 +238,77 @@ nav {
   
 .visuallyhidden {
     opacity: 0;
+}
+
+@media screen and (min-width: 750px) {
+
+.burger-button {
+    display: none;
+}
+
+.fade, .about-me, .skills-list, .about-me-container .title, .my-skills-container .title {
+    width: 100%;
+    margin: 0 10px;
+    max-width: 375px;
+}
+
+.hidden {
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 13px;
+    margin: 20px;
+}
+
+.live-links {
+    margin-top: auto;
+}
+
+.menu {
+    position: relative;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    
+}
+
+nav {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-image {
+    height: 150px;
+}
+
+.skills-list {
+    columns: 1;
+}
+
+.skills-list li {
+    margin-top: 10px;
+}
+
+.top-page-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.visuallyhidden {
+    opacity: 100%;
+}
+
+
 }

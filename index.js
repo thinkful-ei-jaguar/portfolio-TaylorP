@@ -33,10 +33,53 @@ const aboutSection = document.getElementById('about-me');
 const projectsSection = document.getElementById('my-projects');
 const skillsSection = document.getElementById('my-skills');
 
+let getTopAbout = function(){
+    let w = window.innerWidth;
+    let x;
+
+    if (w>750) {
+        x = 212;
+    }
+    else {
+        x =292;
+    }
+
+    return x;
+}
+
+let getTopProject = function(){
+    let w = window.innerWidth;
+    let x;
+
+    if (w>750) {
+        x = 621;
+    }
+    else {
+        x =779;
+    }
+
+    return x;
+}
+
+let getTopSkills = function(){
+    let w = window.innerWidth;
+    let x;
+
+    if (w>750) {
+        x = 212;
+    }
+    else {
+        x =669;
+    }
+
+    return x;
+}
+
 aboutMe.addEventListener('click', function(){
-    const xy = aboutSection.getBoundingClientRect();
+    const xy = document.body.getBoundingClientRect();
+    console.log(xy);
     window.scrollTo({
-        top: xy.y,
+        top: getTopAbout(),
         left: xy.x,
         behavior: 'smooth'
     })
@@ -45,7 +88,7 @@ aboutMe.addEventListener('click', function(){
 projects.addEventListener('click', function(){
     const xy = projectsSection.getBoundingClientRect();
     window.scrollTo({
-        top: xy.y,
+        top: getTopProject(),
         left: xy.x,
         behavior: 'smooth'
     })
@@ -54,7 +97,7 @@ projects.addEventListener('click', function(){
 skills.addEventListener('click', function(){
     const xy = skillsSection.getBoundingClientRect();
     window.scrollTo({
-        top: xy.y,
+        top: getTopSkills(),
         left: xy.x,
         behavior: 'smooth'
     })
