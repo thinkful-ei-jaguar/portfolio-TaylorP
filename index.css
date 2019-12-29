@@ -28,6 +28,7 @@
     border: none;
     backdrop-filter: blur(18px);
     background-color: transparent;
+    cursor: pointer;
 }
 
 .burger1, .burger2, .burger3 {
@@ -36,17 +37,6 @@
     background-color: #5886C7;
     margin:8px 0;
     transition: 0.4s;
-}
-.change .burger1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-  
-.change .burger2 {opacity: 0;}
-  
-.change .burger3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .code {
@@ -133,7 +123,6 @@ img {
 .live-links a {
     margin: 0 8px;
     color: black;
-    text-decoration: none;
 }
 
 .live-links a:hover{
@@ -155,6 +144,7 @@ img {
 
 .menu li {
     padding-right: 20px;
+    cursor: pointer;
 }
 
 nav {

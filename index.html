@@ -11,18 +11,18 @@
 <body>
     <nav>
         <h1 class='name'>Taylor <br><span class='bold'>Piccarreto</span></h1>
-        <button type='button' class='burger-button'>
+        <div class='burger-button' tabindex="0">
             <div class='burger1'></div>
             <div class='burger2'></div>
             <div class='burger3'></div>
-        </button>
-        <section class='menu-container'>
+        </div>
+        <div class='menu-container'>
             <ul class='menu hidden visuallyhidden' id='menu'>
-              <li id='about-btn'>About<span class='bold'>Me</span></li>
-              <li id='skills-btn'>My<span class='bold'>Skills</span></li>
-              <li id='projects-btn'>My<span class='bold'>Projects</span></li>
+              <li id='about-btn' tabindex="0">About<span class='bold'>Me</span></li>
+              <li id='skills-btn' tabindex="0">My<span class='bold'>Skills</span></li>
+              <li id='projects-btn' tabindex="0">My<span class='bold'>Projects</span></li>
             </ul>
-        </section>
+        </div>
     </nav>
     <div class='space'></div>
     <header class='hero'>
@@ -30,10 +30,10 @@
         <p class='headline'>Hi, I’m Taylor, and I like my applications like I like my pancakes: Fullstack and no bugs.</p>
     </header>
     <main>
-      <section class='top-page-group'>
+      <div class='top-page-group'>
         <section class='about-me-container'>
         <h2 class='title' id='about-me'>About<span class='bold'>Me</span></h2>
-        <section class='about-me'>
+        <div class='about-me'>
             <p> &emsp; I am an NYC transplant from upstate New York, came here for a job on 
                 Wallstreet, enjoyed life behind a bar more, currently trying to get 
                 out of the said bar. Now, a recent graduate from Thinkful’s Engineering Immersion, 
@@ -49,44 +49,44 @@
                 learned and apply them in non-conventional ways, to view a problem from my p
                 oint of view, the Taylor v4.0 view. 
             </p>
-        </section>
+        </div>
         </section>
         <section class='my-skills-container'>
         <h2 class='title' id='my-skills'>My<span class='bold'>Skills</span></h2>
-        <section class='skills-list-container'>
+        <div class='skills-list-container'>
             <ul class='skills-list'>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>Git/GitHub</li>
             </ul>
+        </div>
         </section>
-        </section>
-      </section>
+      </div>
         <h2 class='title' id='my-projects'>My<span class='bold'>Projects</span></h2>
         <section class='projects-container'>
         <section class='project fade' id='quiz'>
             <div class='project-image'><img src="images/quiz-app.png" alt="quizz-app-screenshot" width='200' height="100"></div>
             <div class='skills'>
             <h3>Quiz<span class='bold'>App</span></h3>
-            <div class='code' id='html'><img src="images/HTML5_Logo.png" alt="HTML5_Logo" width='.5' height=".5"></div>
-            <div class='code' id='css'><img src="images/css-3-logo.png" alt="css-3-logo" width='1' height="1"></div>
-            <div class='code' id='js'><img src="images/js-logo2.png" alt="js-logo" width='1' height="1"></div>
+            <div class='code'><img src="images/HTML5_Logo.png" alt="HTML5_Logo" width='1' height="1"></div>
+            <div class='code'><img src="images/css-3-logo.png" alt="css-3-logo" width='1' height="1"></div>
+            <div class='code'><img src="images/js-logo2.png" alt="js-logo" width='1' height="1"></div>
             </div>
             <p class='snippet'>The Quiz App is a fun browser-based quiz 
                     game that tests your knowledge of the ‘obvious’, with not 
                     so obvious questions. With 8 questions, a scorekeeper, and 
                     the ability to take the quiz to your heart’s content. I built 
                     this for a fun exercise, as well as an entry point into interactive websites.</p>
-            <div class='live-links'><a href="https://github.com/tpic12/quiz_app">Repo</a></div>
+            <div class='live-links'><a href="https://github.com/tpic12/quiz_app" target='_blank'>Repo</a><a href="https://tpic12.github.io/quiz_app/" target='_blank'>Live</a></div>
         </section>
         <section class='project fade' id='bookmark'>
             <div class='project-image'><img src="images/bookmark-app.png" alt="bookmarks-app-screenshot"></div>
             <div class='skills'>
             <h3>My<span class='bold'>Bookmarks</span></h3>
-              <div class='code' id='html'><img src="images/HTML5_Logo.png" alt="HTML5_Logo" width='.5' height=".5"></div>
-              <div class='code' id='css'><img src="images/css-3-logo.png" alt="css-3-logo" width='1' height="1"></div>
-              <div class='code' id='js'><img src="images/js-logo2.png" alt="js-logo" width='1' height="1"></div>
+              <div class='code'><img src="images/HTML5_Logo.png" alt="HTML5_Logo" width='1' height="1"></div>
+              <div class='code'><img src="images/css-3-logo.png" alt="css-3-logo" width='1' height="1"></div>
+              <div class='code'><img src="images/js-logo2.png" alt="js-logo" width='1' height="1"></div>
             </div>
             <p class='snippet'>My Bookmarks is a third-party(separate of the browser) 
                 application that stores your favorite websites in one easy to use,  
@@ -95,7 +95,7 @@
                 the freedom of moving to a new browser or when you get a new computer,
                 you don't have to lose all your saved website.
             </p>
-            <div class='live-links'><a href="https://github.com/thinkful-ei-jaguar/bookmarkApp-TaylorP">Repo</a><a href="https://thinkful-ei-jaguar.github.io/bookmarkApp-TaylorP/">Live</a></div>
+            <div class='live-links'><a href="https://github.com/thinkful-ei-jaguar/bookmarkApp-TaylorP" target='_blank'>Repo</a><a href="https://thinkful-ei-jaguar.github.io/bookmarkApp-TaylorP/" target='_blank'>Live</a></div>
         </section>
         </section>
         <section class='space'>
@@ -108,8 +108,8 @@
         <div class='social' id='linkedin'><a href="https://www.linkedin.com/in/taylor-piccarreto-19a716b0/"><img src="images/linkedIn_logo.jpeg" alt="linkedin" width="31" height="31"></a></div>
         <div class='social' id='github'><a href="https://github.com/tpic12"></a><img src="images/github-logo.png" alt="github" width="31" height="31"></div>
     </footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script type='text/javascript' src='index.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src='index.js'></script>
 
 </body>
 </html>
